@@ -422,15 +422,39 @@
     }
 }
 
-/* Food Menu Styling */
+/* Menu Styling */
 .menu-note {
     background: #f8f9fa;
-    padding: 16px;
+    padding: 16px 20px;
     border-radius: 8px;
-    margin-bottom: 24px;
+    margin: 0 16px 24px;
+}
+
+.menu-note ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-note li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
     color: #666;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.menu-note li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+}
+
+/* Menu Sections */
+.menu-sections {
+    padding: 0 16px;
 }
 
 .menu-section {
@@ -439,58 +463,82 @@
 
 .menu-section h3 {
     color: #2c3e50;
-    font-size: 20px;
-    margin-bottom: 8px;
-    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
 }
 
-.timing {
+.menu-section h4 {
+    color: #34495e;
+    font-size: 16px;
+    margin: 20px 0 12px;
+}
+
+/* Table Styling */
+.menu-table {
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.menu-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+
+.menu-table th {
+    background: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.menu-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
     color: #666;
     font-size: 14px;
-    margin-bottom: 16px;
 }
 
-.menu-items {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 8px 0;
-    border-bottom: 1px dashed #eee;
-}
-
-.item-name {
-    flex: 1;
-    padding-right: 16px;
-    color: #333;
-    font-size: 14px;
-}
-
-.price {
+.menu-table td:last-child {
+    text-align: right;
     color: #2c3e50;
     font-weight: 500;
-    font-size: 14px;
-    white-space: nowrap;
 }
 
-/* Mobile adjustments */
+.table-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Mobile Adjustments */
 @media (max-width: 480px) {
-    .menu-section {
+    .menu-note {
+        margin: 0 12px 20px;
+        padding: 12px 16px;
+    }
+
+    .menu-sections {
         padding: 0 12px;
     }
-    
-    .menu-item {
-        padding: 10px 0;
+
+    .menu-table {
+        margin: 0 -12px;
+        padding: 0 12px;
     }
-    
-    .item-name {
+
+    .menu-table table {
         font-size: 13px;
-        line-height: 1.4;
+    }
+
+    .menu-table th,
+    .menu-table td {
+        padding: 10px 8px;
     }
 }
 
