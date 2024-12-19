@@ -320,16 +320,10 @@
 /* Gallery Filters */
 .gallery-filters {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     padding: 16px;
     margin-bottom: 20px;
-}
-
-@media (max-width: 480px) {
-    .gallery-filters {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 .filter-btn {
@@ -337,20 +331,21 @@
     align-items: center;
     justify-content: center;
     gap: 6px;
-    padding: 8px 12px;
+    padding: 8px 10px;
     border: none;
     border-radius: 20px;
     background: #f8f9fa;
     color: #666;
     cursor: pointer;
     transition: all 0.2s ease;
-    font-size: 13px;
+    font-size: 12px;
     white-space: nowrap;
     width: 100%;
+    min-height: 36px;
 }
 
 .filter-btn i {
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 .filter-btn:hover {
@@ -366,14 +361,31 @@
 /* Mobile adjustments */
 @media (max-width: 480px) {
     .gallery-filters {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 12px;
         gap: 6px;
     }
     
     .filter-btn {
-        padding: 6px 10px;
-        font-size: 12px;
+        padding: 6px 8px;
+        font-size: 11px;
+        min-height: 32px;
+    }
+
+    .filter-btn i {
+        font-size: 13px;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .gallery-filters {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .filter-btn {
+        font-size: 13px;
+        padding: 8px 12px;
     }
 }
 
