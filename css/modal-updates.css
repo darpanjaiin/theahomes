@@ -550,3 +550,111 @@
 .gallery-item.show {
     display: block; /* Show when filtered */
 }
+
+/* Reviews Modal Styling */
+.review-platform-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 32px;
+}
+
+.platform-button.google {
+    background: #fff;
+    color: #4285f4;
+    border: 2px solid #4285f4;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.platform-button.google:hover {
+    background: #4285f4;
+    color: #fff;
+}
+
+.platform-button i {
+    font-size: 18px;
+}
+
+/* Reviews Grid */
+.reviews-grid {
+    display: grid;
+    gap: 24px;
+    padding: 0 16px;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-2px);
+}
+
+.review-header {
+    margin-bottom: 16px;
+}
+
+.rating {
+    display: flex;
+    gap: 4px;
+}
+
+.rating i {
+    color: #ffc107;
+    font-size: 16px;
+}
+
+.review-content {
+    color: #444;
+}
+
+.review-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.reviewer-name {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    .reviews-grid {
+        gap: 16px;
+        padding: 0 12px;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+
+    .platform-button.google {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
