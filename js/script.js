@@ -185,28 +185,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Gallery Filtering
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    function initializeGalleryFilters() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
 
-    // Show all items initially
-    galleryItems.forEach(item => item.classList.add('show'));
+        // Show all items initially
+        galleryItems.forEach(item => item.classList.add('show'));
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filterValue = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
 
-            const filterValue = button.getAttribute('data-filter');
-
-            galleryItems.forEach(item => {
-                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                    item.classList.add('show');
-                } else {
-                    item.classList.remove('show');
-                }
+                // Filter items
+                galleryItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    if (filterValue === 'all' || category === filterValue) {
+                        item.classList.add('show');
+                    } else {
+                        item.classList.remove('show');
+                    }
+                });
             });
         });
+    }
+
+    // Initialize filters when gallery modal opens
+    document.getElementById('gallery-card').addEventListener('click', () => {
+        setTimeout(() => {
+            initializeGalleryFilters();
+            // Show all items initially
+            document.querySelectorAll('.gallery-item').forEach(item => item.classList.add('show'));
+        }, 100);
     });
 }); 
