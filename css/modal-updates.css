@@ -658,3 +658,104 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* WiFi Section Styling */
+.wifi-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.wifi-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.wifi-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wifi-item .label {
+    font-weight: 600;
+    color: #2c3e50;
+    min-width: 80px;
+}
+
+.wifi-item .value {
+    color: #3498db;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+/* Rules List Styling */
+.rules-section {
+    margin-bottom: 24px;
+}
+
+.rules-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2c3e50;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+}
+
+.rules-section h3 i {
+    color: #3498db;
+}
+
+.rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.rule-item i {
+    color: #3498db;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.rule-item p {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    .wifi-section {
+        padding: 16px;
+        margin: 0 12px 20px;
+    }
+
+    .rules-list {
+        gap: 12px;
+        margin: 0 12px;
+    }
+
+    .rule-item {
+        padding: 10px;
+    }
+
+    .rule-item p {
+        font-size: 13px;
+    }
+}
