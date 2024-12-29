@@ -221,4 +221,62 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.gallery-item').forEach(item => item.classList.add('show'));
         }, 100);
     });
+
+    // Add this with your other event listeners
+    document.getElementById('rooms-card').addEventListener('click', function() {
+        document.getElementById('rooms-modal').style.display = 'block';
+    });
+
+    // Room Gallery functionality
+    function initializeRoomGalleries() {
+        const galleries = document.querySelectorAll('.room-image-gallery');
+        
+        galleries.forEach(gallery => {
+            const images = gallery.querySelectorAll('img');
+            const dots = gallery.querySelectorAll('.dot');
+            const prevBtn = gallery.querySelector('.prev');
+            const nextBtn = gallery.querySelector('.next');
+            let currentIndex = 0;
+
+            function showImage(index) {
+                images.forEach(img => img.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                images[index].classList.add('active');
+                dots[index].classList.add('active');
+            }
+
+            function nextImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            }
+
+            function prevImage() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                showImage(currentIndex);
+            }
+
+            prevBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                prevImage();
+            });
+
+            nextBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                nextImage();
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', e => {
+                    e.stopPropagation();
+                    currentIndex = index;
+                    showImage(currentIndex);
+                });
+            });
+        });
+    }
+
+    // Initialize galleries when rooms modal opens
+    document.getElementById('rooms-card').addEventListener('click', () => {
+        setTimeout(initializeRoomGalleries, 100);
+    });
 }); 
