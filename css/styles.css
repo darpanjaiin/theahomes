@@ -2440,3 +2440,59 @@ body {
 .room-image-gallery:has(img:only-child) .gallery-dots {
     display: none;
 }
+:root {
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --accent-color: #E74C3C;
+    --text-color: #000000;
+    --light-gray: #ECF0F1;
+    --system-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal !important;
+}
+
+
+.location-preview {
+    position: relative;
+    margin: 1rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.location-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.view-on-map {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-on-map:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.view-on-map i {
+    color: #E74C3C;
+}
+
