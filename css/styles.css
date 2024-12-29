@@ -2603,3 +2603,128 @@ body {
         font-size: 15px;
     }
 }
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --accent-color: #E74C3C;
+    --text-color: #000000;
+    --light-gray: #ECF0F1;
+    --system-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal !important;
+}
+
+
+/* Local Specials Modal Enhancement */
+#specials-modal .attractions-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#specials-modal .attraction-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s ease;
+}
+
+#specials-modal .attraction-card:active {
+    transform: scale(0.98);
+}
+
+#specials-modal .attraction-card h4 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#specials-modal .attraction-card .distance {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+#specials-modal .attraction-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Mobile Specific Enhancements */
+@media (max-width: 768px) {
+    #specials-modal .attraction-card img {
+        height: 200px;
+    }
+}
+:root {
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --accent-color: #E74C3C;
+    --text-color: #000000;
+    --light-gray: #ECF0F1;
+    --system-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal !important;
+}
+
+/* Local Specials Modal Enhancement */
+#specials-modal .attraction-card {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 20px;
+    background: #f8f8f8;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+}
+
+#specials-modal .attraction-image {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#specials-modal .attraction-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#specials-modal .attraction-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #specials-modal .attraction-card {
+        grid-template-columns: 1fr;
+    }
+
+    #specials-modal .attraction-image {
+        height: 250px;
+    }
+}
+
