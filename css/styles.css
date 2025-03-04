@@ -2665,8 +2665,22 @@ body {
 
 /* Mobile Specific Enhancements */
 @media (max-width: 768px) {
-    #specials-modal .attraction-card img {
-        height: 200px;
+    #specials-modal .attraction-card {
+        margin: 0 15px;
+        background: #f8f8f8;
+        border: 1px solid #e0e0e0;
+    }
+    
+    #specials-modal .modal-sections {
+        padding: 15px 0;
+    }
+    
+    #specials-modal .modal-section h3 {
+        margin: 0 15px 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #eee;
+        color: #333;
+        font-size: 18px;
     }
 }
 :root {
@@ -2725,6 +2739,85 @@ body {
 
     #specials-modal .attraction-image {
         height: 250px;
+    }
+}
+
+/* Hero Slider */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 32vh; /* Reduced from 60vh to a more rectangular proportion */
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hero-slider .slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slider .slide.active {
+    opacity: 1;
+}
+
+.hero-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center 30%; /* Position image to show more of the upper part */
+    
+}
+
+.hero-slider .instagram-follow-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hero-slider .instagram-follow-btn:hover {
+    background-color: #e1306c;
+    color: white;
+}
+
+.hero-slider .instagram-follow-btn i {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Update media queries to maintain consistent sizing across devices */
+@media screen and (min-width: 1024px) {
+    .hero-slider {
+        height: 250px; /* Fixed height for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 250px; /* Fixed height for mobile */
     }
 }
 

@@ -279,4 +279,20 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('rooms-card').addEventListener('click', () => {
         setTimeout(initializeRoomGalleries, 100);
     });
+
+    // Hero Slider functionality
+    const slides = document.querySelectorAll('.hero-slider .slide');
+    let currentSlide = 0;
+    const slideInterval = 6000; // Change slide every 6 seconds (increased from 5s)
+    
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    
+    // Start the slideshow with a slight initial delay
+    setTimeout(() => {
+        setInterval(nextSlide, slideInterval);
+    }, 1000);
 }); 
