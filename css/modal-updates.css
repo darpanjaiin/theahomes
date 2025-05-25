@@ -51,22 +51,74 @@
     font-weight: 500;
 }
 
-/* Close Button */
-.modal-content.modal-large .close {
-    position: fixed;
-    right: 20px;
+/* Back Button */
+.modal-content .close {
+    position: sticky;
     top: 20px;
-    font-size: 28px;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: -10px;
     cursor: pointer;
-    color: #2c3e50;
+    color: #fff;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.1);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
+    background: #ff6b35;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    min-width: fit-content;
+}
+
+.modal-content .close:before {
+    content: "Back";
+}
+
+.modal-content .close:after {
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.modal-content .close:hover {
+    background: #ff5722;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Clear fix for sticky positioning */
+.modal-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Ensure modal header doesn't interfere with sticky button */
+.modal-content h2 {
+    margin-top: 60px;
+    position: relative;
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .modal-content .close {
+        top: 15px;
+        padding: 8px 16px;
+        font-size: 13px;
+        margin-right: -5px;
+    }
+    
+    .modal-content h2 {
+        margin-top: 50px;
+    }
 }
 
 /* Collapsible Menu Styles */
