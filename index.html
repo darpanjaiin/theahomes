@@ -128,6 +128,13 @@
                     <p>Your mountain retreat</p>
                 </div>
             </div>
+            <div class="feature-card" id="activities-card">
+                <img src="assets/activities/1.jpeg" alt="Activities">
+                <div class="card-content">
+                    <h2>Activities</h2>
+                    <p>Fun & Recreation</p>
+                </div>
+            </div>
         </section>
 
         <footer>
@@ -415,6 +422,21 @@
                     <div class="rule-item">
                         <i class="fas fa-clock"></i>
                         <p>Check-in time: 2:00 PM | Check-out time: 11:00 AM sharp</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <i class="fas fa-utensils"></i>
+                        <p>Breakfast is served until 10:30 AM</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <i class="fas fa-coffee"></i>
+                        <p>Staff break time: 3:00 PM to 5:00 PM</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <i class="fas fa-moon"></i>
+                        <p>Dinner service available until 10:00 PM. For late dining, guests can use the microwave as staff retires by 11:00 PM</p>
                     </div>
                     
                     <div class="rule-item">
@@ -1213,200 +1235,248 @@
             </div>
         </div>
     </div>
+  <!-- Add new Rooms Modal -->
+  <div id="rooms-modal" class="modal">
+    <div class="modal-content modal-large">
+        <span class="close">&times;</span>
+        <h2>Our Rooms</h2>
+        <p class="modal-description">Experience comfort with a view in our thoughtfully designed rooms</p>
+        
+        <div class="rooms-container">
+            <!-- Room 1 -->
+            <div class="room-showcase-card">
+                <div class="room-image-gallery">
+                    <div class="gallery-wrapper">
+                        <img src="assets/gallery/room types/1/1.1.jpeg" alt="Chasing Snow Flakes" class="active">
+                        <img src="assets/gallery/room types/1/1.2.jpeg" alt="Chasing Snow Flakes">
+                        <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h3>Chasing Snow Flakes</h3>
+                    <p class="room-description">A spacious retreat with a private balcony, perfect for both relaxation and work.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-expand"></i> Spacious</span>
+                        <span><i class="fas fa-door-open"></i> Private Balcony</span>
+                        <span><i class="fas fa-desk"></i> Work Space</span>
+                        <span><i class="fas fa-bath"></i> Attached Bathroom</span>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Add new Rooms Modal -->
-    <div id="rooms-modal" class="modal">
+            <!-- Room 2 -->
+            <div class="room-showcase-card">
+                <div class="room-image-gallery">
+                    <div class="gallery-wrapper">
+                        <img src="assets/gallery/room types/2/2.1.jpeg" alt="Blossom and Breezes" class="active">
+                        <img src="assets/gallery/room types/2/2.2.jpeg" alt="Blossom and Breezes">
+                        <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h3>Blossom and Breezes</h3>
+                    <p class="room-description">Located on the 1st floor next to the living room, offering serene views of the apple orchard.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-tree"></i> Apple Orchard View</span>
+                        <span><i class="fas fa-paint-brush"></i> Themed Interior</span>
+                        <span><i class="fas fa-bath"></i> Attached Bathroom</span>
+                        <span><i class="fas fa-building"></i> 1st Floor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 3 -->
+            <div class="room-showcase-card">
+                <div class="room-image-gallery">
+                    <div class="gallery-wrapper">
+                        <img src="assets/gallery/room types/3/3.1.jpeg" alt="Between Snow and Stream" class="active">
+                        <img src="assets/gallery/room types/3/3.2.jpeg" alt="Between Snow and Stream">
+                        <img src="assets/gallery/room types/3/3.3.jpeg" alt="Between Snow and Stream">
+                        <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h3>Between Snow and Stream</h3>
+                    <p class="room-description">A spacious haven offering stunning dual views of mountains and river from your private balcony.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-mountain"></i> Mountain View</span>
+                        <span><i class="fas fa-water"></i> River View</span>
+                        <span><i class="fas fa-door-open"></i> Private Balcony</span>
+                        <span><i class="fas fa-bath"></i> Attached Bathroom</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 4 -->
+            <div class="room-showcase-card">
+                <div class="room-image-gallery">
+                    <div class="gallery-wrapper">
+                        <img src="assets/gallery/room types/4/4.1.jpeg" alt="First Light" class="active">
+                        <img src="assets/gallery/room types/4/4.2.jpeg" alt="First Light">
+                        <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h3>First Light</h3>
+                    <p class="room-description">Located on the 2nd floor, witness the magical first rays of dawn over mountains and valleys.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-sun"></i> Dawn View</span>
+                        <span><i class="fas fa-mountain"></i> Mountain View</span>
+                        <span><i class="fas fa-bath"></i> Attached Bathroom</span>
+                        <span><i class="fas fa-building"></i> 2nd Floor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 5 -->
+            <div class="room-showcase-card">
+                <div class="room-image-gallery">
+                    <div class="gallery-wrapper">
+                        <img src="assets/gallery/room types/5/5.1.jpeg" alt="River's Song" class="active">
+                        <img src="assets/gallery/room types/5/5.2.jpeg" alt="River's Song">
+                        <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h3>River's Song</h3>
+                    <p class="room-description">2nd floor sanctuary with views of River Beas and Manalsu stream, featuring a private living area.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-water"></i> River Views</span>
+                        <span><i class="fas fa-couch"></i> Private Living Area</span>
+                        <span><i class="fas fa-bath"></i> Attached Bathroom</span>
+                        <span><i class="fas fa-building"></i> 2nd Floor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 6 -->
+            <div class="room-showcase-card">
+                <div class="room-image-gallery">
+                    <div class="gallery-wrapper">
+                        <img src="assets/gallery/room types/6/6.1.jpeg" alt="The Mountain's Heart" class="active">
+                        <img src="assets/gallery/room types/6/6.2.jpeg" alt="The Mountain's Heart">
+                        <img src="assets/gallery/room types/6/6.3.jpeg" alt="The Mountain's Heart">
+                        <img src="assets/gallery/room types/6/6.4.jpeg" alt="The Mountain's Heart">
+                        <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h3>The Mountain's Heart</h3>
+                    <p class="room-description">Our premium top floor suite with large windows offering panoramic mountain and valley views.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-mountain"></i> Panoramic Views</span>
+                        <span><i class="fas fa-door-open"></i> Private Balcony</span>
+                        <span><i class="fas fa-bath"></i> Bathroom with Tub</span>
+                        <span><i class="fas fa-building"></i> Top Floor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 7 -->
+            <div class="room-showcase-card">
+                <div class="room-image-gallery">
+                    <div class="gallery-wrapper">
+                        <img src="assets/gallery/room types/7/7.1.jpeg" alt="Snowbound Secrets" class="active">
+                        <img src="assets/gallery/room types/7/7.2.jpeg" alt="Snowbound Secrets">
+                        <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-content">
+                    <h3>Snowbound Secrets</h3>
+                    <p class="room-description">A spacious ground floor room that comfortably sleeps 3, with mountain views and luxury amenities.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-expand"></i> Spacious</span>
+                        <span><i class="fas fa-users"></i> Sleeps 3</span>
+                        <span><i class="fas fa-bath"></i> Bathroom with Tub</span>
+                        <span><i class="fas fa-building"></i> Ground Floor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Add Activities Modal -->
+    <div id="activities-modal" class="modal">
         <div class="modal-content modal-large">
             <span class="close">&times;</span>
-            <h2>Our Rooms</h2>
-            <p class="modal-description">Experience comfort with a view in our thoughtfully designed rooms</p>
+            <h2>Activities & Recreation</h2>
             
-            <div class="rooms-container">
-                <!-- Room 1 -->
-                <div class="room-showcase-card">
-                    <div class="room-image-gallery">
-                        <div class="gallery-wrapper">
-                            <img src="assets/gallery/room types/1/1.1.jpeg" alt="Chasing Snow Flakes" class="active">
-                            <img src="assets/gallery/room types/1/1.2.jpeg" alt="Chasing Snow Flakes">
-                            <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                            <div class="gallery-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-content">
-                        <h3>Chasing Snow Flakes</h3>
-                        <p class="room-description">A spacious retreat with a private balcony, perfect for both relaxation and work.</p>
-                        <div class="room-features">
-                            <span><i class="fas fa-expand"></i> Spacious</span>
-                            <span><i class="fas fa-door-open"></i> Private Balcony</span>
-                            <span><i class="fas fa-desk"></i> Work Space</span>
-                            <span><i class="fas fa-bath"></i> Attached Bathroom</span>
-                        </div>
-                    </div>
+            <!-- Summary Section -->
+            <div class="activities-summary">
+                <div class="summary-card">
+                    <h3>Indoor Activities</h3>
+                    <ul>
+                        <li><i class="fas fa-dice"></i> Pool Table - Challenge your friends to an exciting game</li>
+                        <li><i class="fas fa-chess"></i> Chess - Exercise your mind with strategic gameplay</li>
+                        <li><i class="fas fa-gamepad"></i> Carrom Board - Enjoy this classic family game</li>
+                        <li><i class="fas fa-book-reader"></i> Library - Immerse yourself in our book collection</li>
+                    </ul>
                 </div>
-
-                <!-- Room 2 -->
-                <div class="room-showcase-card">
-                    <div class="room-image-gallery">
-                        <div class="gallery-wrapper">
-                            <img src="assets/gallery/room types/2/2.1.jpeg" alt="Blossom and Breezes" class="active">
-                            <img src="assets/gallery/room types/2/2.2.jpeg" alt="Blossom and Breezes">
-                            <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                            <div class="gallery-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-content">
-                        <h3>Blossom and Breezes</h3>
-                        <p class="room-description">Located on the 1st floor next to the living room, offering serene views of the apple orchard.</p>
-                        <div class="room-features">
-                            <span><i class="fas fa-tree"></i> Apple Orchard View</span>
-                            <span><i class="fas fa-paint-brush"></i> Themed Interior</span>
-                            <span><i class="fas fa-bath"></i> Attached Bathroom</span>
-                            <span><i class="fas fa-building"></i> 1st Floor</span>
-                        </div>
-                    </div>
+                <div class="summary-card">
+                    <h3>Outdoor Activities</h3>
+                    <ul>
+                        <li><i class="fas fa-fire"></i> Evening Bonfire - Gather around for warmth and stories</li>
+                        <li><i class="fas fa-tree"></i> Garden Picnic - Enjoy meals in our scenic outdoor space</li>
+                    </ul>
                 </div>
+            </div>
 
-                <!-- Room 3 -->
-                <div class="room-showcase-card">
-                    <div class="room-image-gallery">
-                        <div class="gallery-wrapper">
-                            <img src="assets/gallery/room types/3/3.1.jpeg" alt="Between Snow and Stream" class="active">
-                            <img src="assets/gallery/room types/3/3.2.jpeg" alt="Between Snow and Stream">
-                            <img src="assets/gallery/room types/3/3.3.jpeg" alt="Between Snow and Stream">
-                            <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                            <div class="gallery-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                                <span class="dot" data-index="2"></span>
-                            </div>
-                        </div>
+            <!-- Image Gallery -->
+            <div class="activities-gallery">
+                <h3>Photo Gallery</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/activities/1.jpeg" alt="Pool Table" loading="lazy">
                     </div>
-                    <div class="room-content">
-                        <h3>Between Snow and Stream</h3>
-                        <p class="room-description">A spacious haven offering stunning dual views of mountains and river from your private balcony.</p>
-                        <div class="room-features">
-                            <span><i class="fas fa-mountain"></i> Mountain View</span>
-                            <span><i class="fas fa-water"></i> River View</span>
-                            <span><i class="fas fa-door-open"></i> Private Balcony</span>
-                            <span><i class="fas fa-bath"></i> Attached Bathroom</span>
-                        </div>
+                    <div class="gallery-item">
+                        <img src="assets/activities/2.jpeg" alt="Carrom Board" loading="lazy">
                     </div>
-                </div>
-
-                <!-- Room 4 -->
-                <div class="room-showcase-card">
-                    <div class="room-image-gallery">
-                        <div class="gallery-wrapper">
-                            <img src="assets/gallery/room types/4/4.1.jpeg" alt="First Light" class="active">
-                            <img src="assets/gallery/room types/4/4.2.jpeg" alt="First Light">
-                            <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                            <div class="gallery-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div>
-                        </div>
+                    <div class="gallery-item">
+                        <img src="assets/activities/3.jpeg" alt="Chess" loading="lazy">
                     </div>
-                    <div class="room-content">
-                        <h3>First Light</h3>
-                        <p class="room-description">Located on the 2nd floor, witness the magical first rays of dawn over mountains and valleys.</p>
-                        <div class="room-features">
-                            <span><i class="fas fa-sun"></i> Dawn View</span>
-                            <span><i class="fas fa-mountain"></i> Mountain View</span>
-                            <span><i class="fas fa-bath"></i> Attached Bathroom</span>
-                            <span><i class="fas fa-building"></i> 2nd Floor</span>
-                        </div>
+                    <div class="gallery-item">
+                        <img src="assets/activities/4.jpeg" alt="Library" loading="lazy">
                     </div>
-                </div>
-
-                <!-- Room 5 -->
-                <div class="room-showcase-card">
-                    <div class="room-image-gallery">
-                        <div class="gallery-wrapper">
-                            <img src="assets/gallery/room types/5/5.1.jpeg" alt="River's Song" class="active">
-                            <img src="assets/gallery/room types/5/5.2.jpeg" alt="River's Song">
-                            <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                            <div class="gallery-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-content">
-                        <h3>River's Song</h3>
-                        <p class="room-description">2nd floor sanctuary with views of River Beas and Manalsu stream, featuring a private living area.</p>
-                        <div class="room-features">
-                            <span><i class="fas fa-water"></i> River Views</span>
-                            <span><i class="fas fa-couch"></i> Private Living Area</span>
-                            <span><i class="fas fa-bath"></i> Attached Bathroom</span>
-                            <span><i class="fas fa-building"></i> 2nd Floor</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Room 6 -->
-                <div class="room-showcase-card">
-                    <div class="room-image-gallery">
-                        <div class="gallery-wrapper">
-                            <img src="assets/gallery/room types/6/6.1.jpeg" alt="The Mountain's Heart" class="active">
-                            <img src="assets/gallery/room types/6/6.2.jpeg" alt="The Mountain's Heart">
-                            <img src="assets/gallery/room types/6/6.3.jpeg" alt="The Mountain's Heart">
-                            <img src="assets/gallery/room types/6/6.4.jpeg" alt="The Mountain's Heart">
-                            <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                            <div class="gallery-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                                <span class="dot" data-index="2"></span>
-                                <span class="dot" data-index="3"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-content">
-                        <h3>The Mountain's Heart</h3>
-                        <p class="room-description">Our premium top floor suite with large windows offering panoramic mountain and valley views.</p>
-                        <div class="room-features">
-                            <span><i class="fas fa-mountain"></i> Panoramic Views</span>
-                            <span><i class="fas fa-door-open"></i> Private Balcony</span>
-                            <span><i class="fas fa-bath"></i> Bathroom with Tub</span>
-                            <span><i class="fas fa-building"></i> Top Floor</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Room 7 -->
-                <div class="room-showcase-card">
-                    <div class="room-image-gallery">
-                        <div class="gallery-wrapper">
-                            <img src="assets/gallery/room types/7/7.1.jpeg" alt="Snowbound Secrets" class="active">
-                            <img src="assets/gallery/room types/7/7.2.jpeg" alt="Snowbound Secrets">
-                            <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                            <div class="gallery-dots">
-                                <span class="dot active" data-index="0"></span>
-                                <span class="dot" data-index="1"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="room-content">
-                        <h3>Snowbound Secrets</h3>
-                        <p class="room-description">A spacious ground floor room that comfortably sleeps 3, with mountain views and luxury amenities.</p>
-                        <div class="room-features">
-                            <span><i class="fas fa-expand"></i> Spacious</span>
-                            <span><i class="fas fa-users"></i> Sleeps 3</span>
-                            <span><i class="fas fa-bath"></i> Bathroom with Tub</span>
-                            <span><i class="fas fa-building"></i> Ground Floor</span>
-                        </div>
+                    <div class="gallery-item">
+                        <img src="assets/activities/5.jpeg" alt="Garden Picnic & Bonfire" loading="lazy">
                     </div>
                 </div>
             </div>

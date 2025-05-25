@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'specials-btn': 'specials-modal',
         'host-favorites': 'host-favorites-modal',
         'gallery-card': 'gallery-modal',
-        'amenities-card': 'amenities-modal'
+        'amenities-card': 'amenities-modal',
+        'activities-card': 'activities-modal'
     };
 
     // Add click handlers for all buttons
